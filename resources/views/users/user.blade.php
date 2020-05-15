@@ -19,7 +19,7 @@
 		                        @if(count($categories)>0)
 		                              @foreach($categories as $category)
                              <li><a href='{{url('/ViewAds/' .preg_replace('/\s+/','',$category->
-                             	maincategory).'/'.$category->id)}}'>{!!html_entity_decode($category->icons)!!}{{$category->maincategory}}</a>
+                             	maincategory).'/'.$category->id)}}'>{{$category->maincategory}}</a>
 </li>
 
 		                                @endforeach
