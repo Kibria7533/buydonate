@@ -549,8 +549,6 @@ public function ViewAds(Request $request,$maincategory,$id){
 
     public function index(){
 	    	$categories=DB::table('main_categories')
-	    	->select('main_categories.id','main_categories.maincategory','icons.icons')
-	    	->join('icons','icons.id','=','main_categories.id')
 	    	->get();
 	    	
 				    	return view('users.user',['categories'=>$categories]);
