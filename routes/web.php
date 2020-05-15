@@ -18,7 +18,7 @@ Route::post('UsersController/retrieve','UsersController@retrieve')->name('catego
 
 Route::get('UsersController/getAds','UsersController@getAds')->name('categories.ads');
 //get single addvertisement
-Route::post('getsingleadd','Userscontroller@getsingleadd')->name('getsingleadd');
+Route::post('getsingleadd','UsersController@getsingleadd')->name('getsingleadd');
 
 //searchadd
 Route::post('/product/search','UsersController@searchProduct');
