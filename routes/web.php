@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 Route::get('/http://buy-then-donate.herokuapp.com/','UsersController@index')->name('home');
-Route::get('/','UsersController@index')->name('home');
+
 Route::get('/ViewAds/{maincategory}/{id}','UsersController@ViewAds');
 
 Route::post('UsersController/fetch','UsersController@fetch')->name('searchlocation.fetch');
