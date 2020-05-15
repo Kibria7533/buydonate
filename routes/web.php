@@ -36,40 +36,40 @@ Route::post('/postCarsBikes','UsersController@postCarsBikes');
 
 
 //admin login page
-Route::get('/admin','Userscontroller@adminlogin')->name('adminlogin');
+Route::get('/admin','UsersController@adminlogin')->name('adminlogin');
 Route::get('/admindashboard','UsersController@admindashboard');
 
 
 //category manage admin panel
-Route::post('addcategory','Userscontroller@addcategory')->name('addcategory');
-Route::get('readcategory','Userscontroller@readcategory')->name('readcategory');
-Route::get('categoriesretrieve','Userscontroller@categoriesretrieve')->name('categoriesretrieve');
-Route::post('addsubcategory','Userscontroller@addsubcategory')->name('addsubcategory');
+Route::post('addcategory','UsersController@addcategory')->name('addcategory');
+Route::get('readcategory','UsersController@readcategory')->name('readcategory');
+Route::get('categoriesretrieve','UsersController@categoriesretrieve')->name('categoriesretrieve');
+Route::post('addsubcategory','UsersController@addsubcategory')->name('addsubcategory');
 
 
 //state city manage admin panel
-Route::post('addst','Userscontroller@addst')->name('addst');
-Route::get('readstates','Userscontroller@readstates')->name('readstates');
-Route::get('stateretrive','Userscontroller@stateretrive')->name('stateretrive');
-Route::post('addcity','Userscontroller@addcity')->name('addcity');
+Route::post('addst','UsersController@addst')->name('addst');
+Route::get('readstates','UsersController@readstates')->name('readstates');
+Route::get('stateretrive','UsersController@stateretrive')->name('stateretrive');
+Route::post('addcity','UsersController@addcity')->name('addcity');
 
 
 
 //users manage admin pannel
-Route::get('showuser','Userscontroller@showuser')->name('showuser');
-Route::post('deleteuser','Userscontroller@deleteuser')->name('deleteuser');
-Route::post('showu','Userscontroller@showu')->name('showu');
-Route::post('makeadmin','Userscontroller@makeadmin')->name('makeadmin');
-Route::post('makeseller','Userscontroller@makeseller')->name('makeseller');
-Route::post('makecustomer','Userscontroller@makecustomer')->name('makecustomer');
+Route::get('showuser','UsersController@showuser')->name('showuser');
+Route::post('deleteuser','UsersController@deleteuser')->name('deleteuser');
+Route::post('showu','UsersController@showu')->name('showu');
+Route::post('makeadmin','UsersController@makeadmin')->name('makeadmin');
+Route::post('makeseller','UsersController@makeseller')->name('makeseller');
+Route::post('makecustomer','UsersController@makecustomer')->name('makecustomer');
 
 
 //seller request manage admin pannel
-Route::get('authcheck','Userscontroller@authcheck')->name('authcheck');
-Route::get('loggingout','Userscontroller@loggingout')->name('loggingout');
-Route::post('sellercheck','Userscontroller@sellercheck')->name('sellercheck');
-Route::post('sellersave','Userscontroller@sellersave')->name('sellersave');
-Route::post('registrycheck','Userscontroller@registrycheck')->name('registrycheck');
+Route::get('authcheck','UsersController@authcheck')->name('authcheck');
+Route::get('loggingout','UsersController@loggingout')->name('loggingout');
+Route::post('sellercheck','UsersController@sellercheck')->name('sellercheck');
+Route::post('sellersave','UsersController@sellersave')->name('sellersave');
+Route::post('registrycheck','UsersController@registrycheck')->name('registrycheck');
 
 
 
